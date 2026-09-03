@@ -19,8 +19,11 @@ def raiz(a, b):
         return "Error: El índice de la raíz no puede ser cero"
     return a ** (1 / b)
 
-def potencia(base, exponente):
-    return base ** exponente
+def potencia(a, b):
+    return a ** b
+
+def porcentaje(a, b):
+    return a * (b / 100)
 
 def menu():
     while True:
@@ -31,7 +34,7 @@ def menu():
         print("Opcion 4: dividir")
         print("Opcion 5: raíz")
         print("Opcion 6: potenciación")
-        print("Opcion 7: ")
+        print("Opcion 7: porcentaje")
         print("Opcion 8: ")
         print("Opcion 9: salir")
         try:
@@ -65,7 +68,7 @@ def menu():
             elif opcion == 6:
                 print("Resultado:", potencia(a, b))
             elif opcion == 7:
-                print("Resultado:", raiz(a, b))
+                print("Resultado:", porcentaje(a, b))
             elif opcion == 8:
                 print("Resultado:", raiz(a, b))
         else:
