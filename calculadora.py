@@ -35,19 +35,18 @@ def menu():
         print("Opcion 5: raíz")
         print("Opcion 6: potenciación")
         print("Opcion 7: porcentaje")
-        print("Opcion 8: ")
-        print("Opcion 9: salir")
+        print("Opcion 8: salir")
         try:
             opcion = int(input("Elige la opción: "))
         except ValueError:
             print("Por favor, ingresa un número entero válido.")
             continue
 
-        if opcion == 9:
+        if opcion == 8:
             print("¡Hasta luego!")
             break
 
-        if opcion in [1, 2, 3, 4, 5, 6, 7, 8]:
+        if opcion in [1, 2, 3, 4, 5, 6, 7]:
             try:
                 a = float(input("Ingresa el primer número: "))
                 b = float(input("Ingresa el segundo número: "))
@@ -68,10 +67,8 @@ def menu():
             elif opcion == 6:
                 print("Resultado:", potencia(a, b))
             elif opcion == 7:
-                print("Resultado:", porcentaje(a, b))
-            elif opcion == 8:
                 print("Resultado:", raiz(a, b))
         else:
-            print("Opción no válida. Intenta de nuevo.")
+            print("Opción no válida. Intenta de nuevo")
 
 menu()
