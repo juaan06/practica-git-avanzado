@@ -104,3 +104,30 @@ muestra este comando.
 Link de tu repositorio (fork) + pantallazo de "git log --oneline"
 
 
+## Versionado semántico (Semantic Versioning)
+
+El Semantic Versioning (SemVer) es una forma estándar de numerar
+versiones de software con el formato MAYOR.MENOR.PARCHE (ej: v1.0.0):
+
+- **MAYOR**: cambia cuando se hace algo que rompe lo que ya existía.
+  Ejemplo: v1.0.0 → v2.0.0.
+- **MENOR**: cambia cuando se agrega algo nuevo sin romper nada de lo anterior.
+  Ejemplo: v1.0.0 → v1.1.0.
+- **PARCHE**: cambia cuando se corrige un error pequeño.
+  Ejemplo: v1.0.0 → v1.0.1.
+
+## git stash
+
+`stash` guarda cambios que aún no has comiteado, de forma temporal,
+dejando tu carpeta de trabajo limpia. Es útil cuando necesitas cambiar
+de tarea rápidamente sin perder el progreso que tenías, y sin tener
+que hacer un commit a medio terminar.
+
+## git tag
+
+`tag` marca un commit específico como una versión importante del
+proyecto (por ejemplo v1.0). Sirve para poder volver exactamente a
+esa versión más adelante, sin tener que buscar el commit entre todo
+el historial.
+
+
