@@ -72,3 +72,5 @@ def menu():
             print("Opción no válida. Intenta de nuevo")
 
 menu()
+
+# practicando git stash
